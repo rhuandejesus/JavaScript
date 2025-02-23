@@ -1,14 +1,19 @@
 function calcularVelocidade() {
 
-    let speed = window.document.getElementById('speed')
+    let valor = window.document.getElementById('valor')
     let resultado = window.document.getElementById('resultado')
-    let velocidade = Number(speed.value)
+    let velocidade = Number(valor.value)
 
-    if (velocidade <= 30) {
+    if (velocidade <= 30) 
+    {
         resultado.innerText = 'Sua velocidade está dentro da permitida.'
-    } else if (velocidade > 30 && velocidade < 100) {
+    } 
+    else if (velocidade > 30 && velocidade < 100) 
+    {
         resultado.innerText = 'Velocidade acima da permitida, será multado.'
-    } else {
+    } 
+    else 
+    {
         resultado.innerText = 'Sua velocidade está muito acima da permitida, você será multado e terá o veículo apreendido.' 
     }
 }
