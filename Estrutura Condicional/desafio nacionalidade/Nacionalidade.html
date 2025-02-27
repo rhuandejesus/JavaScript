@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Nacionalidade.js" type="text/javascript" defer></script>
     <title>Nacionalidade</title>
 </head>
 <body>
-    <h1>Descobrindo sua Nacionalidade</h1><br>
-    <p>Digite sua Idade:</p>
-    <input type="number" id="valor">
-    <input type="button" value="Consultar" onclick="calcularIdade()">
-    <p id="resultado"></p>
-
+    <h1>Verificar Nacionalidade</h1>
     
+    <select name="nacionalidade" id="nacionalidade">
+        <option value="">Selecione um país</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="Canadá">Canadá</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Japão">Japão</option>
+        <option value="Alemanha">Alemanha</option>
+        <option value="Outro">Outro</option>
+    </select>
+
+    <input type="button" value="Verificar" onclick="exibirNacionalidade()" />
+    <p id="resultado"></p>
 </body>
 </html>
