@@ -1,8 +1,9 @@
 function exibirDiaSemana() {
     
     let select = document.getElementById('dia');
-    let resultado = document.getElementById('resultado');
     let dia = Number(select.value);
+    let resultado = document.getElementById('resultado');
+    
 
     switch (dia) {
         case 0:
@@ -30,6 +31,7 @@ function exibirDiaSemana() {
             resultado.innerHTML = 'Selecione uma opção!';
             break;
     }
+
 
 }
 
