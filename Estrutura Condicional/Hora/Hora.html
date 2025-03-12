@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia</title>
-    <script src="Hora.js" defer></script> 
     <link rel="stylesheet" href="Hora.css">
+    <title>Descobrindo que horas são</title>
 </head>
-    
-<body>
-    <!-- color da imagem manhã #6D8780 -->
-    <!-- color da imagem tarde #773302 -->
-    <!-- color da imagem noite #292C2E -->
+<body id="pagina" onload="HoraDoDia()">
 
-        <h1>Período do dia</h1>
+    <h1>Descobrindo que horas são agora</h1>
 
-        <div id="Imagem">   
-            <img src="img/Manhã.jpg" alt="manhã"></img>        
+    <div id="container">
+        <div id="horas">Agora são x horas</div>
+        <div>
+            <img id="imagem" src="img/Manhã.jpg" alt="a">
         </div>
+    </div>
+    
 
-        <div id="informacoes"></div>
-
+    <script src="Hora.js"></script>
+    
 </body>
 </html>

@@ -1,22 +1,34 @@
-let agora = new Date();
-let agoraminutos = new Date();
-let agorasegundos= new Date();
-let hora = agora.getHours();
-let minutos = agoraminutos.getMinutes();
-let segundos = agorasegundos.getSeconds();
-let HoraDiv = document.getElementById('informacoes');
-let resultado;
+function HoraDoDia(){
+    let agora = new Date()
+    let hora =7//agora.getHours()
+    let minuto = agora.getMinutes()  
+    let textohoras = window.document.getElementById('horas')
+    let imagem = window.document.getElementById('imagem')
+    let pagina = window.document.getElementById('pagina')
 
-if (hora >= 5 && hora < 12) {
-    resultado = 'Bom dia!';
+    textohora=0;
+
+    if (hora >= 0 && hora <= 5) {
+        textohoras.innerText = `Boa madrugada, agora são ${hora} horas e ${minuto} minutos!`
+        imagem.src = 'img/Madrugada.jpg'
+        pagina.style.backgroundColor = '#000000'
+    } 
     
-} else if (hora >= 12 && hora < 18) {
-    resultado = 'Boa tarde!';
+    else if (hora < 12) {
+        textohoras.innerText = `Bom dia, agora são ${hora} horas e ${minuto} minutos.`
+        imagem.src = 'img/Manhã.jpg'
+        pagina.style.backgroundColor = '#FC9F18'
+    } 
     
-} else if (hora >= 18 && hora < 24) {
-    resultado = 'Boa noite!';
-} else {
-    resultado = 'Boa madrugada!';
+    else if (hora < 18) {
+        textohoras.innerText = `Boa tarde, agora são ${hora} horas e ${minuto} minutos.`
+        imagem.src = 'img/Tarde.jpg'
+        pagina.style.backgroundColor = '#773302'
+    } 
+    
+    else {
+        textohoras.innerText = `Boa noite, agora são ${hora} horas e ${minuto} minutos.`
+        imagem.src = 'img/Noite.jpg'
+        pagina.style.backgroundColor = '#292C2E'
+    }
 }
-
-HoraDiv.innerHTML = `Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos . <p>${resultado}</p>`;
