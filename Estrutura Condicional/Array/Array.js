@@ -1,7 +1,7 @@
 function capturarNumeros() {
-    let quantidade = parseInt(prompt("Quantos números quer inserir?"));
+    let quantidade = parseInt(prompt("Insira uma quantidade de dados"));
     
-    if (isNaN(quantidade) || quantidade <= 0) {
+    if (quantidade == isNaN || quantidade <= 0 || quantidade == null) {
         alert("Por favor, insira um número válido.");
         return;
     }
@@ -9,24 +9,17 @@ function capturarNumeros() {
     let numeros = [];
 
     for (let i = 0; i < quantidade; i++) {
-        let numero = parseInt(prompt(`Digite o ${i + 1}º número:`));
-        
-        if (!isNaN(numero)) {
-            numeros.push(numero);
-        } else {
-            alert("Valor inválido, tente novamente!");
-            i--; 
-        }
+        numeros [i] = parseInt(prompt(`Digite o ${i + 1}º número:`));  
     }
 
     numeros.push(10);
-    numeros.sort((a, b) => a - b);
+    numeros.sort(function (a, b) {return a - b});
 
     let totalNumeros = numeros.length;
 
     document.getElementById("resultado").innerHTML = `
-        <strong>Números digitados (ordenados):</strong> ${numeros.join(", ")} <br>
-        <strong>Total de números:</strong> ${totalNumeros}
+        Números digitados (ordenados): ${numeros.join(", ")} <br>
+        Total de números:${totalNumeros}
     `;
 
     let buscarNumero = parseInt(prompt("Digite um número para verificar se ele está na lista:"));
