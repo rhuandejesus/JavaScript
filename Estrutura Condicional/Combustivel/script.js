@@ -12,21 +12,17 @@ function Calcular (){
    
     let calculoetanol = 1/(valor*porcetagem) * 100; // conta para calcular o valor do etanol
 
-   // const totalgasolina = calculogasolina.toFixed(2);
-   // const totaletanol = calculoetanol.toFixed(2);
-    const calcu = calculogasolina.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    const calc = calculoetanol.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    const calcgasolina = calculogasolina.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    const calcetanol = calculoetanol.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
    
-    
-
     let resultado = document.getElementById('resultado');
  
     if(document.getElementById('gasolina').checked){
-      resultado.innerHTML = `O valor ficará de  ${calcu}`;
+      resultado.innerHTML = `Abasteça com <strong>ETANOL</strong> se seu preço for igual ou menor a: <strong>${calcgasolina}</strong>`;
     }
  
     else if (document.getElementById('etanol').checked){
-        resultado.innerHTML = `O valor ficará de  ${calc}`;
+        resultado.innerHTML = `Abasteça com <strong>GASOLINA</strong> se seu preço for igual ou menor a: <strong>${calcetanol}</strong>`;
     }
  
     else{
