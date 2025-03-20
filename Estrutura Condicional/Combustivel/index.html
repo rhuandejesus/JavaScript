@@ -8,14 +8,63 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <p>Digite abaixo o valor do combustível</p>
-    <label for="">R$</label> <input type="number" name="" id="valorcombustivel">
-
-    <p>O valor digitado é referente ao preço da:</p>
-    <p><input type="radio">Gasolina</p> 
-    <p><input type="radio">Etanol</p>
-
-    <input type="button" value="Calcular" onclick="Calcular()">
+    
+    <main>
+        <div id="valor">
+            <h2>Digite o preço do Combustivel </h2>
+           <input type="text" name = 'valordousuario' id ="preco">
+        </div>
+ 
+        <input type="radio" id="gasolina" name="combustivel" value="combustiveis">
+        <label for="gasolina">Gasolina</label>
+ 
+        <input type="radio" id = "etanol" name = "combustivel" value="combustiveis">
+        <label for="etanol" >Etanol</label> <br>
+ 
+        <select name="Escolha" id="select">
+         <option value="" disabled selected>selecione um valor </option>
+            <option value="0.65">65%</option>
+            <option value="0.66">66%</option>
+            <option value="0.67">67%</option>
+            <option value="0.68">68%</option>
+            <option value="0.69">69%</option>
+            <option value="0.70">70%</option>
+            <option value="0.71">71%</option>
+            <option value="0.72">72%</option>
+            <option value="0.73">73%</option>
+            <option value="0.74">74%</option>
+            <option value="0.75">75%</option>
+            <option value="0.75">76%</option>
+            <option value="0.75">77%</option>
+            <option value="0.75">78%</option>
+            <option value="0.75">79%</option>
+            <option value="0.75">80%</option>
+            <option value="0.75">81%</option>
+            <option value="0.75">82%</option>
+            <option value="0.75">83%</option>
+            <option value="0.75">84%</option>
+            <option value="0.75">85%</option>
+            <option value="0.75">86%</option>
+            <option value="0.75">87%</option>
+            <option value="0.75">88%</option>
+            <option value="0.75">89%</option>
+            <option value="0.75">90%</option>
+            <option value="0.75">91%</option>
+            <option value="0.75">92%</option>
+            <option value="0.75">93%</option>
+            <option value="0.75">94%</option>
+            <option value="0.75">95%</option>
+            <option value="0.75">96%</option>
+            <option value="0.75">97%</option>
+            <option value="0.75">98%</option>
+            <option value="0.75">99%</option>
+            <option value="0.75">100%</option>
+        </select>
+        <br>
+        <button id="button" onclick="Calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </main>
+    
     
 </body>
 </html>
