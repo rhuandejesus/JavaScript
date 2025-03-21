@@ -2,5 +2,83 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
 }
 
+.container {
+    background-color: #00A699;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 5px solid #00A699 ;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.8); 
+    color: black; 
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    margin: 0 10px;
+}
+
+button {
+    background-color: #007A6F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00665E;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 10px 5px;
+}
+
+.icon-container img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); 
+}
+
+
+.icon-container img {
+    width: 50px;
+}
